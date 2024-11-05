@@ -1,6 +1,6 @@
 namespace CartService.Data.Interfaces;
 
-public interface ICartRepository
+public interface ICartRepository<T> : IBaseRepository<T>
 {
     
 }

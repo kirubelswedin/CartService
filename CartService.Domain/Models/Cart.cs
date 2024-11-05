@@ -1,6 +1,6 @@
 namespace CartService.Domain.Models;
 
-public class Cart
+public class Cart : Product
 {
     // public Guid Id { get; set; }
     public string Id { get; set; }

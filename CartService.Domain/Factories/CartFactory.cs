@@ -4,13 +4,16 @@ namespace CartService.Domain.Factories;
 
 public class CartFactory
 {
-    public Cart CreateCart(Product product, string userId)
+    public Cart CreateCart(Product product, Cart cart)
     {
         return new Cart
         {
-            UserId = userId,
-            ProductName = product.Name,
-            
+            UserId = cart.UserId,
+            TotalPrice = cart.TotalPrice,
+            Name = product.Name,
+            Price = product.Price,
+            Quantity = product.Quantity,
+            Description = product.Description,
         };
     }
 
