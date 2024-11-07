@@ -1,10 +1,11 @@
 namespace CartService.Domain.Models;
 
-public class CartItem
+public class CartItem : BaseEntity
 {
-    // public Guid CartItemId { get; set; }
-    public string Id { get; set; } = null!;
-    public string ProductName { get; set; } = null!;
-    public int Quantity { get; set; }
+    public string ProductId { get; set; } = null!;
+    public string Name { get; set; } = null!;
     public decimal Price { get; set; }
+    public int Quantity { get; set; }
+    
+    public decimal TotalPrice => Price * Quantity;
 }

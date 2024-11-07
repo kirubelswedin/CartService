@@ -6,4 +6,5 @@ public class ProductRequest
     public decimal Price { get; private set; }
     public int Quantity { get; set; }
     public string? Description { get; set; } 
+    
 }

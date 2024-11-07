@@ -1,20 +1,26 @@
+using CartService.Domain.Interfaces;
 using CartService.Domain.Models;
 
 namespace CartService.Domain.Factories;
 
-public class CartFactory
+public class CartFactory : ICartFactory
 {
-    public Cart CreateCart(Product product, Cart cart)
+    public Cart CreateCart(string userId)
     {
         return new Cart
         {
-            UserId = cart.UserId,
-            TotalPrice = cart.TotalPrice,
-            Name = product.Name,
-            Price = product.Price,
-            Quantity = product.Quantity,
-            Description = product.Description,
+            UserId = userId
         };
     }
-
+    
+    public CartItem CreateCartItem(Product product, int quantity)
+    {
+        return new CartItem
+        {
+            ProductId = product.Id,
+            Name = product.Name,
+            Price = product.Price,
+            Quantity = quantity
+        };
+    }
 }

@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CartService.Business/1.0.0": {
+        "dependencies": {
+          "CartService.Data": "1.0.0",
+          "CartService.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CartService.Business.dll": {}
+        }
+      },
+      "CartService.Data/1.0.0": {
+        "dependencies": {
+          "CartService.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CartService.Data.dll": {}
+        }
+      },
+      "CartService.Domain/1.0.0": {
+        "runtime": {
+          "CartService.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CartService.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CartService.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CartService.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

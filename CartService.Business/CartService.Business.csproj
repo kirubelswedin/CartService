@@ -11,4 +11,8 @@
       <ProjectReference Include="..\CartService.Domain\CartService.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Helpers\" />
+    </ItemGroup>
+
 </Project>

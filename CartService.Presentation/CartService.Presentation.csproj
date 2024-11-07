@@ -17,8 +17,4 @@
       <ProjectReference Include="..\CartService.Domain\CartService.Domain.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Contrellers\" />
-    </ItemGroup>
-
 </Project>
